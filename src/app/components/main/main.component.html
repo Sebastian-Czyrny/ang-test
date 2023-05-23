@@ -1,0 +1,13 @@
+<ng-container *ngFor="let d of data; let i = index">
+    {{d}}
+</ng-container>
+<ng-container *ngIf="n !== undefined; else isUndefined">
+    <p>{{n}}</p>
+</ng-container>
+<ng-template #isUndefined>NgIf Test</ng-template>
+<p>Class template test:</p>
+<p class="{{n !== undefined ? 'black' : 'yellow'}}" >Hello</p>
+<p>Style template test:</p>
+<p [style.backgroundColor]="n !== undefined ? 'black' : 'yellow'">Style</p>
+
+<a routerLink="/posts">posts</a>
