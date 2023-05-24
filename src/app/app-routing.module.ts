@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { ParentComponent } from './components/parent/parent.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'posts',
     component: PostsComponent,
+  },
+  {
+    path: 'parent',
+    component: ParentComponent,
   },
 ];
 

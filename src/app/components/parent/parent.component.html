@@ -1,0 +1,7 @@
+<div class="container">
+    <p>parent component</p>
+    <app-child [data]="parentData" (onChildClicked)="childClicked($event)"></app-child>
+</div>
+<a routerLink="/posts">posts</a>
+<br>
+<a routerLink="/">home</a>
